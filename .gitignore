@@ -1,0 +1,11 @@
+# Ignorar arquivos de ambiente
+.env
+*.env
+.env.*
+
+# Ignore arquivos do Java / Maven / IDE
+target/
+*.class
+*.iml
+.idea/
+

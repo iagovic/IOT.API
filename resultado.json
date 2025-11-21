@@ -1,0 +1,587 @@
+{
+  "candidatos": [
+    {
+      "id": 1,
+      "melhor_vaga": {
+        "vaga_id": 5,
+        "compatibilidade": 80
+      },
+      "todas_as_vagas": [
+        {
+          "vaga_id": 1,
+          "compatibilidade": 60
+        },
+        {
+          "vaga_id": 5,
+          "compatibilidade": 80
+        },
+        {
+          "vaga_id": 3,
+          "compatibilidade": 40
+        },
+        {
+          "vaga_id": 6,
+          "compatibilidade": 30
+        },
+        {
+          "vaga_id": 2,
+          "compatibilidade": 20
+        },
+        {
+          "vaga_id": 4,
+          "compatibilidade": 10
+        },
+        {
+          "vaga_id": 7,
+          "compatibilidade": 10
+        },
+        {
+          "vaga_id": 8,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 9,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 10,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 11,
+          "compatibilidade": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "melhor_vaga": {
+        "vaga_id": 7,
+        "compatibilidade": 90
+      },
+      "todas_as_vagas": [
+        {
+          "vaga_id": 1,
+          "compatibilidade": 40
+        },
+        {
+          "vaga_id": 5,
+          "compatibilidade": 50
+        },
+        {
+          "vaga_id": 7,
+          "compatibilidade": 90
+        },
+        {
+          "vaga_id": 3,
+          "compatibilidade": 20
+        },
+        {
+          "vaga_id": 2,
+          "compatibilidade": 30
+        },
+        {
+          "vaga_id": 4,
+          "compatibilidade": 10
+        },
+        {
+          "vaga_id": 6,
+          "compatibilidade": 10
+        },
+        {
+          "vaga_id": 8,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 9,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 10,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 11,
+          "compatibilidade": 0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "melhor_vaga": {
+        "vaga_id": 3,
+        "compatibilidade": 90
+      },
+      "todas_as_vagas": [
+        {
+          "vaga_id": 1,
+          "compatibilidade": 20
+        },
+        {
+          "vaga_id": 5,
+          "compatibilidade": 30
+        },
+        {
+          "vaga_id": 3,
+          "compatibilidade": 90
+        },
+        {
+          "vaga_id": 2,
+          "compatibilidade": 10
+        },
+        {
+          "vaga_id": 4,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 6,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 7,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 8,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 9,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 10,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 11,
+          "compatibilidade": 0
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "melhor_vaga": {
+        "vaga_id": 4,
+        "compatibilidade": 80
+      },
+      "todas_as_vagas": [
+        {
+          "vaga_id": 1,
+          "compatibilidade": 20
+        },
+        {
+          "vaga_id": 5,
+          "compatibilidade": 30
+        },
+        {
+          "vaga_id": 4,
+          "compatibilidade": 80
+        },
+        {
+          "vaga_id": 2,
+          "compatibilidade": 10
+        },
+        {
+          "vaga_id": 6,
+          "compatibilidade": 20
+        },
+        {
+          "vaga_id": 7,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 3,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 8,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 9,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 10,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 11,
+          "compatibilidade": 0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "melhor_vaga": {
+        "vaga_id": 5,
+        "compatibilidade": 90
+      },
+      "todas_as_vagas": [
+        {
+          "vaga_id": 1,
+          "compatibilidade": 40
+        },
+        {
+          "vaga_id": 5,
+          "compatibilidade": 90
+        },
+        {
+          "vaga_id": 3,
+          "compatibilidade": 20
+        },
+        {
+          "vaga_id": 2,
+          "compatibilidade": 10
+        },
+        {
+          "vaga_id": 4,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 6,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 7,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 8,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 9,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 10,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 11,
+          "compatibilidade": 0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "melhor_vaga": {
+        "vaga_id": 2,
+        "compatibilidade": 80
+      },
+      "todas_as_vagas": [
+        {
+          "vaga_id": 1,
+          "compatibilidade": 20
+        },
+        {
+          "vaga_id": 5,
+          "compatibilidade": 20
+        },
+        {
+          "vaga_id": 2,
+          "compatibilidade": 80
+        },
+        {
+          "vaga_id": 4,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 6,
+          "compatibilidade": 30
+        },
+        {
+          "vaga_id": 3,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 7,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 8,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 9,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 10,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 11,
+          "compatibilidade": 0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "melhor_vaga": {
+        "vaga_id": 8,
+        "compatibilidade": 90
+      },
+      "todas_as_vagas": [
+        {
+          "vaga_id": 1,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 5,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 2,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 4,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 6,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 3,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 7,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 8,
+          "compatibilidade": 90
+        },
+        {
+          "vaga_id": 9,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 10,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 11,
+          "compatibilidade": 0
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "melhor_vaga": {
+        "vaga_id": 4,
+        "compatibilidade": 80
+      },
+      "todas_as_vagas": [
+        {
+          "vaga_id": 1,
+          "compatibilidade": 20
+        },
+        {
+          "vaga_id": 5,
+          "compatibilidade": 30
+        },
+        {
+          "vaga_id": 4,
+          "compatibilidade": 80
+        },
+        {
+          "vaga_id": 2,
+          "compatibilidade": 10
+        },
+        {
+          "vaga_id": 6,
+          "compatibilidade": 20
+        },
+        {
+          "vaga_id": 3,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 7,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 8,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 9,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 10,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 11,
+          "compatibilidade": 0
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "melhor_vaga": {
+        "vaga_id": 7,
+        "compatibilidade": 90
+      },
+      "todas_as_vagas": [
+        {
+          "vaga_id": 1,
+          "compatibilidade": 40
+        },
+        {
+          "vaga_id": 5,
+          "compatibilidade": 50
+        },
+        {
+          "vaga_id": 7,
+          "compatibilidade": 90
+        },
+        {
+          "vaga_id": 3,
+          "compatibilidade": 20
+        },
+        {
+          "vaga_id": 2,
+          "compatibilidade": 10
+        },
+        {
+          "vaga_id": 4,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 6,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 8,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 9,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 10,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 11,
+          "compatibilidade": 0
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "melhor_vaga": {
+        "vaga_id": 3,
+        "compatibilidade": 80
+      },
+      "todas_as_vagas": [
+        {
+          "vaga_id": 1,
+          "compatibilidade": 20
+        },
+        {
+          "vaga_id": 5,
+          "compatibilidade": 30
+        },
+        {
+          "vaga_id": 3,
+          "compatibilidade": 80
+        },
+        {
+          "vaga_id": 2,
+          "compatibilidade": 10
+        },
+        {
+          "vaga_id": 4,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 6,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 7,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 8,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 9,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 10,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 11,
+          "compatibilidade": 0
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "melhor_vaga": {
+        "vaga_id": 10,
+        "compatibilidade": 50
+      },
+      "todas_as_vagas": [
+        {
+          "vaga_id": 1,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 5,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 2,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 4,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 6,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 3,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 7,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 8,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 9,
+          "compatibilidade": 0
+        },
+        {
+          "vaga_id": 10,
+          "compatibilidade": 50
+        },
+        {
+          "vaga_id": 11,
+          "compatibilidade": 0
+        }
+      ]
+    }
+  ]
+}
