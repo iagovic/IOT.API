@@ -3,583 +3,301 @@
     {
       "id": 1,
       "melhor_vaga": {
+        "compatibilidade": 66,
         "vaga_id": 5,
-        "compatibilidade": 80
+        "vaga_nome": "Desenvolvedor Full Stack J\u00fanior"
       },
+      "nome": "Carlos Auditado",
       "todas_as_vagas": [
         {
+          "compatibilidade": 66,
           "vaga_id": 1,
-          "compatibilidade": 60
+          "vaga_nome": "Desenvolvedor Back-end Python"
         },
         {
-          "vaga_id": 5,
-          "compatibilidade": 80
-        },
-        {
+          "compatibilidade": 33,
           "vaga_id": 3,
-          "compatibilidade": 40
+          "vaga_nome": "Especialista em Front-end React"
         },
         {
+          "compatibilidade": 66,
+          "vaga_id": 5,
+          "vaga_nome": "Desenvolvedor Full Stack J\u00fanior"
+        },
+        {
+          "compatibilidade": 33,
           "vaga_id": 6,
-          "compatibilidade": 30
+          "vaga_nome": "Arquiteto de Software"
         },
         {
-          "vaga_id": 2,
-          "compatibilidade": 20
-        },
-        {
-          "vaga_id": 4,
-          "compatibilidade": 10
-        },
-        {
+          "compatibilidade": 33,
           "vaga_id": 7,
-          "compatibilidade": 10
-        },
-        {
-          "vaga_id": 8,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 9,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 10,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 11,
-          "compatibilidade": 0
+          "vaga_nome": "Cientista de Dados Senior"
         }
       ]
     },
     {
       "id": 2,
       "melhor_vaga": {
+        "compatibilidade": 100,
         "vaga_id": 7,
-        "compatibilidade": 90
+        "vaga_nome": "Cientista de Dados Senior"
       },
+      "nome": "Mariana Lima",
       "todas_as_vagas": [
         {
+          "compatibilidade": 66,
           "vaga_id": 1,
-          "compatibilidade": 40
+          "vaga_nome": "Desenvolvedor Back-end Python"
         },
         {
-          "vaga_id": 5,
-          "compatibilidade": 50
-        },
-        {
-          "vaga_id": 7,
-          "compatibilidade": 90
-        },
-        {
-          "vaga_id": 3,
-          "compatibilidade": 20
-        },
-        {
+          "compatibilidade": 33,
           "vaga_id": 2,
-          "compatibilidade": 30
+          "vaga_nome": "Analista de Banco de Dados Oracle"
         },
         {
-          "vaga_id": 4,
-          "compatibilidade": 10
-        },
-        {
-          "vaga_id": 6,
-          "compatibilidade": 10
-        },
-        {
-          "vaga_id": 8,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 9,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 10,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 11,
-          "compatibilidade": 0
+          "compatibilidade": 100,
+          "vaga_id": 7,
+          "vaga_nome": "Cientista de Dados Senior"
         }
       ]
     },
     {
       "id": 3,
       "melhor_vaga": {
+        "compatibilidade": 100,
         "vaga_id": 3,
-        "compatibilidade": 90
+        "vaga_nome": "Especialista em Front-end React"
       },
+      "nome": "Ricardo Pires",
       "todas_as_vagas": [
         {
-          "vaga_id": 1,
-          "compatibilidade": 20
-        },
-        {
-          "vaga_id": 5,
-          "compatibilidade": 30
-        },
-        {
+          "compatibilidade": 100,
           "vaga_id": 3,
-          "compatibilidade": 90
+          "vaga_nome": "Especialista em Front-end React"
         },
         {
-          "vaga_id": 2,
-          "compatibilidade": 10
-        },
-        {
-          "vaga_id": 4,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 6,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 7,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 8,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 9,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 10,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 11,
-          "compatibilidade": 0
+          "compatibilidade": 66,
+          "vaga_id": 5,
+          "vaga_nome": "Desenvolvedor Full Stack J\u00fanior"
         }
       ]
     },
     {
       "id": 4,
       "melhor_vaga": {
+        "compatibilidade": 33,
         "vaga_id": 4,
-        "compatibilidade": 80
+        "vaga_nome": "Engenheiro Cloud AWS Pleno"
       },
+      "nome": "Ana Souza",
       "todas_as_vagas": [
         {
-          "vaga_id": 1,
-          "compatibilidade": 20
-        },
-        {
-          "vaga_id": 5,
-          "compatibilidade": 30
-        },
-        {
+          "compatibilidade": 33,
           "vaga_id": 4,
-          "compatibilidade": 80
+          "vaga_nome": "Engenheiro Cloud AWS Pleno"
         },
         {
-          "vaga_id": 2,
-          "compatibilidade": 10
-        },
-        {
+          "compatibilidade": 33,
           "vaga_id": 6,
-          "compatibilidade": 20
+          "vaga_nome": "Arquiteto de Software"
         },
         {
-          "vaga_id": 7,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 3,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 8,
-          "compatibilidade": 0
-        },
-        {
+          "compatibilidade": 33,
           "vaga_id": 9,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 10,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 11,
-          "compatibilidade": 0
+          "vaga_nome": "DBA NoSQL"
         }
       ]
     },
     {
       "id": 5,
       "melhor_vaga": {
+        "compatibilidade": 100,
         "vaga_id": 5,
-        "compatibilidade": 90
+        "vaga_nome": "Desenvolvedor Full Stack J\u00fanior"
       },
+      "nome": "Julia Melo",
       "todas_as_vagas": [
         {
+          "compatibilidade": 66,
           "vaga_id": 1,
-          "compatibilidade": 40
+          "vaga_nome": "Desenvolvedor Back-end Python"
         },
         {
+          "compatibilidade": 100,
           "vaga_id": 5,
-          "compatibilidade": 90
+          "vaga_nome": "Desenvolvedor Full Stack J\u00fanior"
         },
         {
-          "vaga_id": 3,
-          "compatibilidade": 20
-        },
-        {
-          "vaga_id": 2,
-          "compatibilidade": 10
-        },
-        {
-          "vaga_id": 4,
-          "compatibilidade": 0
-        },
-        {
+          "compatibilidade": 33,
           "vaga_id": 6,
-          "compatibilidade": 0
+          "vaga_nome": "Arquiteto de Software"
         },
         {
+          "compatibilidade": 33,
           "vaga_id": 7,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 8,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 9,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 10,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 11,
-          "compatibilidade": 0
+          "vaga_nome": "Cientista de Dados Senior"
         }
       ]
     },
     {
       "id": 6,
       "melhor_vaga": {
+        "compatibilidade": 66,
         "vaga_id": 2,
-        "compatibilidade": 80
+        "vaga_nome": "Analista de Banco de Dados Oracle"
       },
+      "nome": "Bruno Costa",
       "todas_as_vagas": [
         {
+          "compatibilidade": 33,
           "vaga_id": 1,
-          "compatibilidade": 20
+          "vaga_nome": "Desenvolvedor Back-end Python"
         },
         {
-          "vaga_id": 5,
-          "compatibilidade": 20
-        },
-        {
+          "compatibilidade": 66,
           "vaga_id": 2,
-          "compatibilidade": 80
+          "vaga_nome": "Analista de Banco de Dados Oracle"
         },
         {
-          "vaga_id": 4,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 6,
-          "compatibilidade": 30
-        },
-        {
-          "vaga_id": 3,
-          "compatibilidade": 0
-        },
-        {
+          "compatibilidade": 33,
           "vaga_id": 7,
-          "compatibilidade": 0
+          "vaga_nome": "Cientista de Dados Senior"
         },
         {
-          "vaga_id": 8,
-          "compatibilidade": 0
-        },
-        {
+          "compatibilidade": 33,
           "vaga_id": 9,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 10,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 11,
-          "compatibilidade": 0
+          "vaga_nome": "DBA NoSQL"
         }
       ]
     },
     {
       "id": 7,
       "melhor_vaga": {
+        "compatibilidade": 100,
         "vaga_id": 8,
-        "compatibilidade": 90
+        "vaga_nome": "T\u00e9cnico de Redes"
       },
+      "nome": "Sofia Alves",
       "todas_as_vagas": [
         {
-          "vaga_id": 1,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 5,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 2,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 4,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 6,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 3,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 7,
-          "compatibilidade": 0
-        },
-        {
+          "compatibilidade": 100,
           "vaga_id": 8,
-          "compatibilidade": 90
-        },
-        {
-          "vaga_id": 9,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 10,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 11,
-          "compatibilidade": 0
+          "vaga_nome": "T\u00e9cnico de Redes"
         }
       ]
     },
     {
       "id": 8,
       "melhor_vaga": {
-        "vaga_id": 4,
-        "compatibilidade": 80
+        "compatibilidade": 66,
+        "vaga_id": 6,
+        "vaga_nome": "Arquiteto de Software"
       },
+      "nome": "Daniel Rocha",
       "todas_as_vagas": [
         {
+          "compatibilidade": 66,
           "vaga_id": 1,
-          "compatibilidade": 20
+          "vaga_nome": "Desenvolvedor Back-end Python"
         },
         {
-          "vaga_id": 5,
-          "compatibilidade": 30
-        },
-        {
+          "compatibilidade": 33,
           "vaga_id": 4,
-          "compatibilidade": 80
+          "vaga_nome": "Engenheiro Cloud AWS Pleno"
         },
         {
-          "vaga_id": 2,
-          "compatibilidade": 10
-        },
-        {
+          "compatibilidade": 66,
           "vaga_id": 6,
-          "compatibilidade": 20
+          "vaga_nome": "Arquiteto de Software"
         },
         {
-          "vaga_id": 3,
-          "compatibilidade": 0
-        },
-        {
+          "compatibilidade": 33,
           "vaga_id": 7,
-          "compatibilidade": 0
+          "vaga_nome": "Cientista de Dados Senior"
         },
         {
-          "vaga_id": 8,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 9,
-          "compatibilidade": 0
-        },
-        {
+          "compatibilidade": 33,
           "vaga_id": 10,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 11,
-          "compatibilidade": 0
+          "vaga_nome": "Estagi\u00e1rio de TI"
         }
       ]
     },
     {
       "id": 9,
       "melhor_vaga": {
+        "compatibilidade": 100,
         "vaga_id": 7,
-        "compatibilidade": 90
+        "vaga_nome": "Cientista de Dados Senior"
       },
+      "nome": "Laura Gomes",
       "todas_as_vagas": [
         {
+          "compatibilidade": 33,
           "vaga_id": 1,
-          "compatibilidade": 40
+          "vaga_nome": "Desenvolvedor Back-end Python"
         },
         {
-          "vaga_id": 5,
-          "compatibilidade": 50
-        },
-        {
-          "vaga_id": 7,
-          "compatibilidade": 90
-        },
-        {
-          "vaga_id": 3,
-          "compatibilidade": 20
-        },
-        {
+          "compatibilidade": 33,
           "vaga_id": 2,
-          "compatibilidade": 10
+          "vaga_nome": "Analista de Banco de Dados Oracle"
         },
         {
-          "vaga_id": 4,
-          "compatibilidade": 0
+          "compatibilidade": 100,
+          "vaga_id": 7,
+          "vaga_nome": "Cientista de Dados Senior"
         },
         {
-          "vaga_id": 6,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 8,
-          "compatibilidade": 0
-        },
-        {
+          "compatibilidade": 33,
           "vaga_id": 9,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 10,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 11,
-          "compatibilidade": 0
+          "vaga_nome": "DBA NoSQL"
         }
       ]
     },
     {
       "id": 10,
       "melhor_vaga": {
+        "compatibilidade": 100,
         "vaga_id": 3,
-        "compatibilidade": 80
+        "vaga_nome": "Especialista em Front-end React"
       },
+      "nome": "Felipe Neto",
       "todas_as_vagas": [
         {
-          "vaga_id": 1,
-          "compatibilidade": 20
-        },
-        {
-          "vaga_id": 5,
-          "compatibilidade": 30
-        },
-        {
+          "compatibilidade": 100,
           "vaga_id": 3,
-          "compatibilidade": 80
+          "vaga_nome": "Especialista em Front-end React"
         },
         {
-          "vaga_id": 2,
-          "compatibilidade": 10
-        },
-        {
-          "vaga_id": 4,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 6,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 7,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 8,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 9,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 10,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 11,
-          "compatibilidade": 0
+          "compatibilidade": 66,
+          "vaga_id": 5,
+          "vaga_nome": "Desenvolvedor Full Stack J\u00fanior"
         }
       ]
     },
     {
       "id": 11,
       "melhor_vaga": {
+        "compatibilidade": 66,
         "vaga_id": 10,
-        "compatibilidade": 50
+        "vaga_nome": "Estagi\u00e1rio de TI"
       },
+      "nome": "Sem Cursos",
       "todas_as_vagas": [
         {
-          "vaga_id": 1,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 5,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 2,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 4,
-          "compatibilidade": 0
-        },
-        {
+          "compatibilidade": 33,
           "vaga_id": 6,
-          "compatibilidade": 0
+          "vaga_nome": "Arquiteto de Software"
         },
         {
-          "vaga_id": 3,
-          "compatibilidade": 0
-        },
-        {
-          "vaga_id": 7,
-          "compatibilidade": 0
-        },
-        {
+          "compatibilidade": 33,
           "vaga_id": 8,
-          "compatibilidade": 0
+          "vaga_nome": "T\u00e9cnico de Redes"
         },
         {
-          "vaga_id": 9,
-          "compatibilidade": 0
-        },
-        {
+          "compatibilidade": 66,
           "vaga_id": 10,
-          "compatibilidade": 50
-        },
-        {
-          "vaga_id": 11,
-          "compatibilidade": 0
+          "vaga_nome": "Estagi\u00e1rio de TI"
         }
       ]
     }
