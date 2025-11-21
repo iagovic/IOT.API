@@ -1,42 +1,53 @@
 from flask import Flask, jsonify
 import json
 import oracledb
-from openai import OpenAI
 from dotenv import load_dotenv
+import google.generativeai as genai
 import os
 
-# ------------------------------
-# CARREGAR VARIÁVEIS DE AMBIENTE
-# ------------------------------
+# ============================
+# Carregar variáveis do .env
+# ============================
 load_dotenv()
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 ORACLE_USER = os.getenv("ORACLE_USER")
 ORACLE_PASS = os.getenv("ORACLE_PASS")
-ORACLE_DSN  = os.getenv("ORACLE_DSN")
+ORACLE_DSN = os.getenv("ORACLE_DSN")
 
-client = OpenAI(api_key=OPENAI_API_KEY)
+# ============================
+# Configurar Gemini
+# ============================
+if not GOOGLE_API_KEY:
+    raise ValueError("❌ GOOGLE_API_KEY ausente no arquivo .env")
+
+genai.configure(api_key=GOOGLE_API_KEY)
+MODEL = "gemini-2.0-flash"
+
 app = Flask(__name__)
 
-# ------------------------------
-# CONEXÃO ORACLE
-# ------------------------------
+# ============================
+# Conexão Oracle
+# ============================
 def connect_oracle():
     if not ORACLE_USER or not ORACLE_PASS or not ORACLE_DSN:
-        raise ValueError("Credenciais do Oracle não definidas. Verifique o .env")
+        raise ValueError("❌ Dados do Oracle ausentes no .env")
+
     return oracledb.connect(
         user=ORACLE_USER,
         password=ORACLE_PASS,
         dsn=ORACLE_DSN
     )
 
-# ------------------------------
-# BUSCAR CANDIDATOS
-# ------------------------------
+# ============================
+# Buscar Candidatos
+# ============================
 def get_candidatos(conn):
     cursor = conn.cursor()
+
     query = """
         SELECT 
-            U.USUARIO_ID AS CANDIDATO_ID,
+            U.USUARIO_ID AS ID,
             U.NOME,
             COALESCE(LISTAGG(C.NOME, ', ') WITHIN GROUP (ORDER BY C.NOME), '') AS COMPETENCIAS
         FROM USUARIOS U
@@ -44,6 +55,7 @@ def get_candidatos(conn):
         LEFT JOIN COMPETENCIAS C ON C.COMPETENCIA_ID = UC.COMPETENCIA_ID
         GROUP BY U.USUARIO_ID, U.NOME
     """
+
     cursor.execute(query)
     rows = cursor.fetchall()
 
@@ -54,14 +66,25 @@ def get_candidatos(conn):
             "nome": r[1],
             "competencias": r[2]
         })
+
     return candidatos
 
-# ------------------------------
-# BUSCAR VAGAS
-# ------------------------------
+# ============================
+# Buscar Vagas
+# ============================
 def get_vagas(conn):
     cursor = conn.cursor()
-    cursor.execute("SELECT VAGA_ID, TITULO, DESCRICAO, REQUISITOS FROM VAGAS")
+
+    query = """
+        SELECT 
+            VAGA_ID,
+            TITULO,
+            DESCRICAO,
+            REQUISITOS
+        FROM VAGAS
+    """
+
+    cursor.execute(query)
     rows = cursor.fetchall()
 
     vagas = []
@@ -69,86 +92,104 @@ def get_vagas(conn):
         descricao = r[2]
         if hasattr(descricao, "read"):
             descricao = descricao.read()
+
         vagas.append({
             "id": r[0],
             "titulo": r[1],
             "descricao": descricao,
             "requisitos": r[3]
         })
+
     return vagas
 
-# ------------------------------
-# ANÁLISE OPENAI
-# ------------------------------
+# ============================
+# Análise via Gemini
+# ============================
 def analisar_compatibilidade(candidatos, vagas):
 
-    # Prompt em string normal (sem f-string)
-    prompt = """
-Você receberá uma lista de candidatos e uma lista de vagas.
-Compare cada candidato com todas as vagas e produza um JSON válido com o seguinte formato exato:
+    prompt = f"""
+Gere SOMENTE um JSON 100% válido seguindo exatamente esta estrutura:
 
-{
+{{
   "candidatos": [
-    {
-      "id": <id_do_candidato>,
-      "nome": "<nome_do_candidato>",
-      "melhor_vaga": {
-        "vaga_id": <id_da_vaga_com_maior_compatibilidade>,
-        "vaga_nome": "<titulo_da_vaga>",
-        "compatibilidade": <score_de_0_a_100>
-      },
+    {{
+      "id": <id>,
+      "nome": "<nome>",
+      "melhor_vaga": {{
+        "vaga_id": <id>,
+        "vaga_nome": "<titulo>",
+        "compatibilidade": <0-100>
+      }},
       "todas_as_vagas": [
-        {
-          "vaga_id": <id_da_vaga>,
-          "vaga_nome": "<titulo_da_vaga>",
-          "compatibilidade": <score>
-        }
+        {{
+          "vaga_id": <id>,
+          "vaga_nome": "<titulo>",
+          "compatibilidade": <0-100>
+        }}
       ]
-    }
+    }}
   ]
-}
-
-Regras:
-- O JSON deve ser 100% válido.
-- Não inclua comentários, explicações ou texto fora do JSON.
-- Calcule compatibilidade analisando descrição, habilidades, experiência e requisitos.
-- Use exatamente os nomes "nome" para o nome do candidato e "vaga_nome" para o nome da vaga.
+}}
 
 Candidatos:
+{json.dumps(candidatos, ensure_ascii=False)}
+
+Vagas:
+{json.dumps(vagas, ensure_ascii=False)}
 """
 
-    # Adiciona os dados reais no final do prompt
-    prompt += json.dumps(candidatos, ensure_ascii=False)
-    prompt += "\n\nVagas:\n"
-    prompt += json.dumps(vagas, ensure_ascii=False)
+    response = genai.GenerativeModel(MODEL).generate_content(prompt)
+    raw = response.text.strip()
 
-    # Chamada a OpenAI
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0
-    )
+    # 1. Tentativa direta
+    try:
+        return json.loads(raw)
+    except:
+        pass
 
-    conteudo = response.choices[0].message.content.strip()
+    # 2. Tentar extrair JSON isolado
+    try:
+        extract = raw[raw.find("{"): raw.rfind("}") + 1]
+        return json.loads(extract)
+    except:
+        raise ValueError("❌ JSON inválido retornado pelo Gemini:\n" + raw)
 
-    if not (conteudo.startswith("{") or conteudo.startswith("[")):
-        raise ValueError("⚠ A OpenAI não retornou JSON válido.")
 
-    return json.loads(conteudo)
+# ============================
+# Rotas
+# ============================
 
-# ------------------------------
-# ROTA DA API
-# ------------------------------
+@app.get("/")
+def home():
+    return {"status": "API rodando com Gemini 2.0 + Oracle!"}
+
+@app.get("/test-db")
+def test_db():
+    try:
+        conn = connect_oracle()
+        cur = conn.cursor()
+        cur.execute("SELECT 'ORACLE OK' FROM dual")
+        result = cur.fetchone()
+        return {"oracle": result[0]}
+    except Exception as e:
+        return {"erro": str(e)}, 500
+
 @app.get("/analise")
 def analise():
-    conn = connect_oracle()
-    candidatos = get_candidatos(conn)
-    vagas = get_vagas(conn)
-    resultado = analisar_compatibilidade(candidatos, vagas)
-    return jsonify(resultado)
+    try:
+        conn = connect_oracle()
+        candidatos = get_candidatos(conn)
+        vagas = get_vagas(conn)
 
-# ------------------------------
-# RUN
-# ------------------------------
+        resultado = analisar_compatibilidade(candidatos, vagas)
+        return jsonify(resultado)
+
+    except Exception as e:
+        return {"erro": str(e)}, 500
+
+
+# ============================
+# Executar servidor
+# ============================
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5062, debug=True)
