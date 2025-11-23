@@ -3,31 +3,34 @@
 Este projeto integra Oracle Database, Flask (Python) e Gemini 2.0 Flash (IA Generativa) para analisar a compatibilidade entre candidatos e vagas.
 A solução busca dados do banco, envia para a IA e retorna um JSON estruturado com a análise completa.
 
-📌 oracle.py — Arquivo da disciplina de Banco de Dados
+📌 oracle.py — Arquivo da Disciplina de Banco de Dados
 
-O arquivo oracle.py foi criado especificamente para atender a disciplina de Banco de Dados.
+O arquivo oracle.py foi criado especificamente para atender aos requisitos da disciplina de Banco de Dados.
 Ele é responsável por:
 
 Conectar ao OracleDB
 
 Buscar usuários, vagas e competências
 
-Organizar os dados antes de enviar para a IA
+Organizar e estruturar os dados antes de enviar para a IA
 
 🤖 Funcionamento da IA
 
-A API envia todos os dados do usuário e da vaga para o Gemini 2.0 Flash, que gera:
+A API envia todas as informações dos usuários e vagas para o modelo Gemini 2.0 Flash, que gera:
 
 Compatibilidade entre cada candidato e todas as vagas
 
-Melhor vaga para cada candidato
+A melhor vaga para cada candidato
 
-JSON final estruturado
+Um JSON final estruturado, pronto para uso no frontend ou mobile
 
-🔗 Rota principal (retorna o JSON gerado pela IA)
+🔗 Rota Principal
+
+Retorna o JSON gerado pela IA:
+
 http://127.0.0.1:5062/analise
 
-⚙️ Tecnologias usadas
+⚙️ Tecnologias Utilizadas
 
 Python + Flask
 
@@ -35,25 +38,22 @@ OracleDB (oracledb)
 
 Google Gemini 2.0 Flash
 
-Dotenv
+dotenv (.env)
 
 REST API
 
-🚀 Como rodar
-
-Instale dependências
-
+🚀 Como Rodar
+1️⃣ Instalar dependências
 pip install -r requirements.txt
 
+2️⃣ Configurar o arquivo .env
 
-Configure o .env com as variáveis do Oracle e da Google, exemplo de como o .env deve ficar 
-(
+Exemplo:
+
 GOOGLE_API_KEY=??????
 ORACLE_USER=??????
 ORACLE_PASS=??????
 ORACLE_DSN=??????
-)
 
-Execute:
-
+3️⃣ Executar a API
 python app.py
