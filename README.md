@@ -1,3 +1,7 @@
+LINK PARA O VIDEO DEMONSTRANDO TODO O CODIGO
+
+https://youtu.be/onrJng93ae4
+
 🧠 API de Análise de Compatibilidade com IA + OracleDB
 
 Este projeto integra Oracle Database, Flask (Python) e Gemini 2.0 Flash (IA Generativa) para analisar a compatibilidade entre candidatos e vagas.
