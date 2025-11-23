@@ -1,0 +1,268 @@
+{
+    "usuarios": [
+        {
+            "id": 21,
+            "nome": "iago",
+            "email": "iago@gmail.com"
+        },
+        {
+            "id": 24,
+            "nome": "igor ",
+            "email": "igor@gmail.com"
+        },
+        {
+            "id": 1,
+            "nome": "Carlos Auditado",
+            "email": "carlos.s@email.com"
+        },
+        {
+            "id": 2,
+            "nome": "Mariana Lima",
+            "email": "mariana.l@email.com"
+        },
+        {
+            "id": 3,
+            "nome": "Ricardo Pires",
+            "email": "ricardo.p@email.com"
+        },
+        {
+            "id": 4,
+            "nome": "Ana Souza",
+            "email": "ana.s@email.com"
+        },
+        {
+            "id": 5,
+            "nome": "Julia Melo",
+            "email": "julia.m@email.com"
+        },
+        {
+            "id": 6,
+            "nome": "Bruno Costa",
+            "email": "bruno.c@email.com"
+        },
+        {
+            "id": 7,
+            "nome": "Sofia Alves",
+            "email": "sofia.a@email.com"
+        },
+        {
+            "id": 8,
+            "nome": "Daniel Rocha",
+            "email": "daniel.r@email.com"
+        },
+        {
+            "id": 9,
+            "nome": "Laura Gomes",
+            "email": "laura.g@email.com"
+        },
+        {
+            "id": 10,
+            "nome": "Felipe Neto",
+            "email": "felipe.n@email.com"
+        },
+        {
+            "id": 11,
+            "nome": "Sem Cursos",
+            "email": "semcursos@email.com"
+        },
+        {
+            "id": 22,
+            "nome": "iagovv",
+            "email": "iago904c@gmail.com"
+        },
+        {
+            "id": 23,
+            "nome": "bruno ",
+            "email": "bruno@gmail.com"
+        }
+    ],
+    "competencias": [
+        {
+            "email": "ana.s@email.com",
+            "competencia": "Cloud AWS",
+            "nivel": 4.8
+        },
+        {
+            "email": "ana.s@email.com",
+            "competencia": "NoSQL MongoDB",
+            "nivel": 3.8
+        },
+        {
+            "email": "bruno.c@email.com",
+            "competencia": "PL/SQL",
+            "nivel": 4.9
+        },
+        {
+            "email": "bruno.c@email.com",
+            "competencia": "SQL",
+            "nivel": 4.5
+        },
+        {
+            "email": "bruno@gmail.com",
+            "competencia": "Python",
+            "nivel": 4.0
+        },
+        {
+            "email": "carlos.s@email.com",
+            "competencia": "Python",
+            "nivel": 4.5
+        },
+        {
+            "email": "carlos.s@email.com",
+            "competencia": "SQL",
+            "nivel": 4.0
+        },
+        {
+            "email": "carlos.s@email.com",
+            "competencia": "JavaScript",
+            "nivel": 3.0
+        },
+        {
+            "email": "carlos.s@email.com",
+            "competencia": "PL/SQL",
+            "nivel": 4.0
+        },
+        {
+            "email": "daniel.r@email.com",
+            "competencia": "Python",
+            "nivel": 4.0
+        },
+        {
+            "email": "daniel.r@email.com",
+            "competencia": "Cloud AWS",
+            "nivel": 4.0
+        },
+        {
+            "email": "daniel.r@email.com",
+            "competencia": "Comunicação",
+            "nivel": 5.0
+        },
+        {
+            "email": "felipe.n@email.com",
+            "competencia": "JavaScript",
+            "nivel": 4.5
+        },
+        {
+            "email": "felipe.n@email.com",
+            "competencia": "React",
+            "nivel": 4.7
+        },
+        {
+            "email": "iago904c@gmail.com",
+            "competencia": "Python",
+            "nivel": 4.0
+        },
+        {
+            "email": "igor@gmail.com",
+            "competencia": "Python",
+            "nivel": 4.0
+        },
+        {
+            "email": "julia.m@email.com",
+            "competencia": "Python",
+            "nivel": 2.5
+        },
+        {
+            "email": "julia.m@email.com",
+            "competencia": "JavaScript",
+            "nivel": 2.0
+        },
+        {
+            "email": "laura.g@email.com",
+            "competencia": "Data Science",
+            "nivel": 3.8
+        },
+        {
+            "email": "laura.g@email.com",
+            "competencia": "SQL",
+            "nivel": 3.5
+        },
+        {
+            "email": "mariana.l@email.com",
+            "competencia": "SQL",
+            "nivel": 5.0
+        },
+        {
+            "email": "mariana.l@email.com",
+            "competencia": "Python",
+            "nivel": 3.5
+        },
+        {
+            "email": "mariana.l@email.com",
+            "competencia": "Data Science",
+            "nivel": 4.5
+        },
+        {
+            "email": "ricardo.p@email.com",
+            "competencia": "JavaScript",
+            "nivel": 4.0
+        },
+        {
+            "email": "ricardo.p@email.com",
+            "competencia": "React",
+            "nivel": 4.2
+        },
+        {
+            "email": "semcursos@email.com",
+            "competencia": "Comunicação",
+            "nivel": 3.0
+        },
+        {
+            "email": "sofia.a@email.com",
+            "competencia": "Redes e Segurança",
+            "nivel": 4.3
+        }
+    ],
+    "cursos": [
+        {
+            "email": "ana.s@email.com",
+            "curso": "AWS Solutions Architect - Associate",
+            "status": "CONCLUIDO"
+        },
+        {
+            "email": "bruno.c@email.com",
+            "curso": "SQL Avançado e PL/SQL",
+            "status": "CONCLUIDO"
+        },
+        {
+            "email": "carlos.s@email.com",
+            "curso": "SQL Avançado e PL/SQL",
+            "status": "CONCLUIDO"
+        },
+        {
+            "email": "daniel.r@email.com",
+            "curso": "AWS Solutions Architect - Associate",
+            "status": "EM PROGRESSO"
+        },
+        {
+            "email": "felipe.n@email.com",
+            "curso": "Docker e Kubernetes",
+            "status": "CANCELADO"
+        },
+        {
+            "email": "julia.m@email.com",
+            "curso": "Modelagem de Dados MongoDB",
+            "status": "EM PROGRESSO"
+        },
+        {
+            "email": "laura.g@email.com",
+            "curso": "Python para Análise de Dados",
+            "status": "EM PROGRESSO"
+        },
+        {
+            "email": "mariana.l@email.com",
+            "curso": "Introdução ao Machine Learning",
+            "status": "EM PROGRESSO"
+        },
+        {
+            "email": "ricardo.p@email.com",
+            "curso": "Desenvolvimento Front-end com React",
+            "status": "CONCLUIDO"
+        },
+        {
+            "email": "sofia.a@email.com",
+            "curso": "Segurança de Aplicações Web",
+            "status": "CONCLUIDO"
+        }
+    ]
+}
